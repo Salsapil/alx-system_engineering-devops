@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -d c C
+grep -d 'C' 'c'
