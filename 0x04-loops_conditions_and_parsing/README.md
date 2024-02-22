@@ -10,11 +10,11 @@ ssh-keygen
 (~/.ssh/id_rsa for the private key and ~/.ssh/id_rsa.pub for the public key).   
 - Optionally, enter a secure passphrase when prompted.
 - Type the passphrase again to confirm.   
-**   
+****
 **2. What is the advantage of using #!/usr/bin/env bash over #!/bin/bash.**   
 - Ensures the script runs using the first available bash interpreter in the system's PATH, making it more portable across different environments.   
 - Avoids potential security issues that might arise if a malicious program replaces the system's default bash binary.   
-**   
+****
 **3. How to use while, until and for loops.**   
 ***while Loop:***
 ```bash
@@ -34,7 +34,7 @@ for variable in list; do
   # Statements to execute for each item in the list
 done
 ```   
-**   
+****   
 **4. How to use if, else, elif and case condition statements.**
 ***if, else and elif Statements:***
 ```bash
@@ -60,7 +60,7 @@ case variable in
     ;;
 esac
 ```   
-**   
+****   
 **5- How to use the cut command.**   
 ***Options:***
 - -b: Selects characters by byte position.   
@@ -73,7 +73,7 @@ esac
 ```bash
 cut [OPTIONS] [FILE]
 ```   
-**   
+****   
 **6- What are files and other comparison operators, and how to use them.**   
 ***File Operators:***   
 These operators check the existence, type, and permissions of files:   
@@ -93,4 +93,4 @@ These operators compare values and return true or false:
 - -gt: Greater than.   
 - -le: Less than or equal to.   
 - -ge: Greater than or equal to.   
-**
+****
