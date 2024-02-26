@@ -10,7 +10,9 @@
 ### Displays lines containing the bash word:   
 - ps -auxf | grep "bash"   
    
-### 
+### Displays To infinity and beyond indefinitely.
 - pgrep: find and searches for process IDs based on given criteria.   
 - -l: tells pgrep to show both the process name and its corresponding PID.   
+   
+### Write a Bash script that stops to_infinity_and_beyond process. -> kill "$(<PID>)"   
    
