@@ -1,1 +1,2 @@
-- Print parent ID -> echo $$
+- Print parent ID -> echo $$   
+- the ps aux command provides a detailed list of all running processes for all users.   
