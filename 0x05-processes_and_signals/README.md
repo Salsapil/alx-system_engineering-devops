@@ -16,3 +16,6 @@
    
 ### Write a Bash script that stops to_infinity_and_beyond process. -> kill "$(<PID>)"   
    
+- pkill: send signals to processes based on their names.   
+- -f: the pattern should be matched against the entire command line.   
+   
