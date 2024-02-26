@@ -16,6 +16,10 @@
    
 ### Write a Bash script that stops to_infinity_and_beyond process. -> kill "$(<PID>)"   
    
+### SIGTERM signal   
 - pkill: send signals to processes based on their names.   
 - -f: the pattern should be matched against the entire command line.   
    
+### Write a Bash script that kills the process 7-highlander.   
+- The -9 option specifies the signal to send to the processes.   
+- Signal number 9 corresponds to SIGKILL.   
