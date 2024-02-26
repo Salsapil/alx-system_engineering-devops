@@ -10,3 +10,7 @@
 ### Displays lines containing the bash word:   
 - ps -auxf | grep "bash"   
    
+### 
+- pgrep: find and searches for process IDs based on given criteria.   
+- -l: tells pgrep to show both the process name and its corresponding PID.   
+   
