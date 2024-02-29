@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+ifconfig | awk '$1=="inet"{print $2}'
