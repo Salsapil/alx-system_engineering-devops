@@ -1,4 +1,4 @@
-![Whiteboard](Task1.drawio.png)
+![whiteboard](Task1.drawio-1.png)
 #### For every additional element, why you are adding it   
   
 **Load Balancer (HAproxy):**  We added this to distribute user traffic across multiple web servers to improve overall performance by handling high traffic volumes more efficiently.   
