@@ -1,6 +1,6 @@
-![whiteboard](Task0.drawio-1.png)   
+![whiteboard](Task0.drawio.png)   
    
-### specifics about this infrastructure:   
+### Specifics about this infrastructure:   
    
 - **Server:** Stores all the website's files, databases, and applications.   
    
