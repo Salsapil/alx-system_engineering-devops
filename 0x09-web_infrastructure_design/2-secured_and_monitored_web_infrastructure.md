@@ -1,3 +1,4 @@
+![whiteboard](Task2.drawio.png)
 ## Aspects:   
    
 **Firewalls:**   
