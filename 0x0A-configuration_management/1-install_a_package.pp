@@ -1,3 +1,4 @@
+# Using Puppet, install flask from pip3.
 class { 'python::pip': }
 
 package { 'Flask':
