@@ -2,8 +2,12 @@
 class { 'python::pip': }
 
 package { 'Flask':
-  ensure => latest,
+  ensure => '2.1.0',
   provider => 'pip3',
-  require => Class['python::pip'],
-  version => '2.1.0',
+}
+
+package { 'werkzeug':
+  ensure   => '2.1.1',
+  provider => 'pip3',
+  require  => Package['Flask'],
 }
