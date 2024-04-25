@@ -16,3 +16,4 @@ echo "server {
         root /etc/nginx/html;
     }
 }" > /etc/nginx/sites-available/default
+sudo service nginx restart
