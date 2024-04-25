@@ -2,7 +2,7 @@
 # redirecting to another page.
 sudo apt-get update
 sudo apt-get install -y nginx
-sudo sed -i "server {
+sed -i "server {
     listen 80;
     server_name localhost;
     location /redirect_me {
