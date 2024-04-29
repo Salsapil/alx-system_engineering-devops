@@ -3,18 +3,5 @@
 sudo apt-get update
 sudo apt-get install -y nginx
 sudo service nginx start
-sudo mkdir /etc/nginx/html
-sudo chown -R $USER:$USER /etc/nginx/html
-echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
-echo "server {
-    listen 80;
-    location /redirect_me {
-        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
-    }
-    error_page 404 /404.html;
-    location = /404.html{
-        root /etc/nginx/html;
-    }
-    add_header X-Served-By $hostname;
-}" > /etc/nginx/sites-available/default
+echo "add_header X-Served-By $hostname;" > /etc/nginx/sites-available/default
 sudo service nginx restart
