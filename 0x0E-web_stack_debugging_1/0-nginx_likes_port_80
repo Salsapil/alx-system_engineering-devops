@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 # debug the issue of keeping container’s Nginx installation from listening on port 80.
-service nginx restart
+rm /etc/nginx/sites-enabled/default
+ls -s /etc/nginx/sites-avaliable/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
