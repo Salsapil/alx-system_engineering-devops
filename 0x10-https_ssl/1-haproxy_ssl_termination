@@ -22,9 +22,9 @@ defaults
 	mode	http
 	option	httplog
 	option	dontlognull
-        timeout connect 5000
-        timeout client  50000
-        timeout server  50000
+    timeout connect 5000
+    timeout client  50000
+    timeout server  50000
 	errorfile 400 /etc/haproxy/errors/400.http
 	errorfile 403 /etc/haproxy/errors/403.http
 	errorfile 408 /etc/haproxy/errors/408.http
@@ -32,11 +32,14 @@ defaults
 	errorfile 502 /etc/haproxy/errors/502.http
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
-frontend web-front
-        bind *:80
-        default_backend web-backend
+    frontend web-front
+    bind *:80
+    bind *:443 ssl crt /etc/haproxy/certs/www.go-getter.tech.pem
+    redirect scheme https code 301 if !{ ssl_fc }
+    http-request redirect scheme https unless { ssl_fc }
+    default_backend web-backend
 
 backend web-backend
-        balance roundrobin
-        server 531199-web-01 54.236.41.47:80
-        server 531199-web-02 100.25.131.39:80
+    balance roundrobin
+    server 531199-web-01 54.236.41.47:80
+    server 531199-web-02 100.25.131.39:80
