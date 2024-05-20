@@ -8,7 +8,7 @@ import requests
 
 def fetch_user_data():
     """Fetch user information and to-do lists"""
-    
+
     url = "https://jsonplaceholder.typicode.com/"
 
     users = requests.get(url + "users").json()
